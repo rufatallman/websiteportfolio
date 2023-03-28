@@ -32,31 +32,31 @@
 
     <div class="hero">
         <div class="content">
-            <h1>Beautifully Crafted Web Experiences</h1>
-            <div class="meet">
+            <h1 class="stagger1">Beautifully Crafted Web Experiences</h1>
+            <div class="meet stagger1">
                 <span>👇</span>
                 <p>Meet Rufat Allman</p>
             </div>
-            <svg class="scroll" width="44" height="77" viewBox="0 0 44 77">
+            <svg class="scroll stagger1" width="44" height="77" viewBox="0 0 44 77">
                 <g id="scroll" transform="translate(-251 -706)">
                   <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(251 706)" fill="none" stroke="#fff" stroke-width="6">
                     <rect width="44" height="77" rx="22" stroke="none"/>
                     <rect x="3" y="3" width="38" height="71" rx="19" fill="none"/>
                   </g>
-                  <circle id="Ellipse_1" data-name="Ellipse 1" cx="12" cy="12" r="12" transform="translate(261 717)" fill="#fff"/>
+                  <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="12" cy="12" r="12" transform="translate(261 717)" fill="#fff"/>
                 </g>
               </svg>
         </div>
         <svg class="hero-design" width="643" height="644" viewBox="0 0 643 644">
             <g id="blockdesign" transform="translate(-901 -207)">
-              <rect class="square-anim" data-name="Rectangle 4" width="161" height="161" rx="20" transform="translate(1222 207)" fill="#6e00ff"/>
-              <rect class="square-anim" data-name="Rectangle 8" width="161" height="161" rx="20" transform="translate(1222 529)" fill="#6e00ff"/>
-              <rect class="square-anim" data-name="Rectangle 6" width="161" height="161" rx="20" transform="translate(1383 368)" fill="#6e00ff" opacity="0.292"/>
+              <rect class="square-anim" data-name="Rectangle 2" width="161" height="161" rx="20" transform="translate(1222 207)" fill="#6e00ff"/>
+              <rect class="square-anim" data-name="Rectangle 10" width="161" height="161" rx="20" transform="translate(1222 529)" fill="#6e00ff"/>
+              <rect class="square-anim" data-name="Rectangle 8" width="161" height="161" rx="20" transform="translate(1383 368)" fill="#6e00ff" opacity="0.292"/>
               <rect class="square-anim" data-name="Rectangle 5" width="161" height="161" rx="20" transform="translate(1062 368)" fill="#fff"/>
-              <rect class="square-anim" data-name="Rectangle 9" width="161" height="161" rx="20" transform="translate(1062 690)" fill="#fff"/>
-              <rect class="square-anim" data-name="Rectangle 7" width="161" height="161" rx="20" transform="translate(901 529)" fill="#fff" opacity="0.243"/>
-              <circle class="square-anim" data-name="Ellipse 2" cx="80.5" cy="80.5" r="80.5" transform="translate(1222 368)" fill="#ff64cb"/>
-              <circle class="square-anim" data-name="Ellipse 3" cx="80.5" cy="80.5" r="80.5" transform="translate(1062 529)" fill="#00e8ff"/>
+              <rect class="square-anim" data-name="Rectangle 3" width="161" height="161" rx="20" transform="translate(1062 690)" fill="#fff"/>
+              <rect class="square-anim" data-name="Rectangle 9" width="161" height="161" rx="20" transform="translate(901 529)" fill="#fff" opacity="0.243"/>
+              <circle class="square-anim" data-name="Rectangle 7" cx="80.5" cy="80.5" r="80.5" transform="translate(1222 368)" fill="#ff64cb"/>
+              <circle class="square-anim" data-name="Rectangle 4" cx="80.5" cy="80.5" r="80.5" transform="translate(1062 529)" fill="#00e8ff"/>
             </g>
           </svg>
     </div>
@@ -141,5 +141,58 @@
         <p>Designed & Built by Rufat Allman</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content', {
+            y: '-30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5")
+        tl.from('.hero-design', {
+            opacity: 0, y: 50, ease: Power4.easeOut, duration: 1
+        }, "-=2")
+
+        gsap.from(".square-anim", {
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: '.transition3',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        });
+    </script>
 </body>
 </html>
