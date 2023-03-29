@@ -47,6 +47,10 @@ header ul a {
   display: none;
 }
 
+.social-header ul li:first-child {
+  margin-left: 46px;
+}
+
 .hero {
   background: #6E00FF;
   color: white;
