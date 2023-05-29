@@ -53,6 +53,34 @@ header {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        color: rgb(128, 128, 128);
+        font-size: 15px;
+    }
+
+    ul {
+        display: flex;
+        align-items: flex-end;
+
+        a {
+            padding: 0 0 0 3em;
+            font-size: 15px;
+        }
+
+        img {
+            padding: 0 0 0 3em;
+            width: 20px;
+            height: 20px;
+            margin-bottom: 4px;
+            
+        }
+    }
+}
+
 .hero {
     padding: 2em;  
     display: flex;
@@ -188,7 +216,7 @@ header {
         padding: 0;
 
         .content {
-            padding: 6em 8em 6em 8em;
+            padding: 6em 8em 2em 8em;
 
             h1 {
                 font-size: 4.64rem;

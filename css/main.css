@@ -45,6 +45,29 @@ header ul a.active::after {
   transform: translateX(-76%); /* Center the underline */
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .logo {
+  color: rgb(128, 128, 128);
+  font-size: 15px;
+}
+footer ul {
+  display: flex;
+  align-items: flex-end;
+}
+footer ul a {
+  padding: 0 0 0 3em;
+  font-size: 15px;
+}
+footer ul img {
+  padding: 0 0 0 3em;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+
 .hero {
   padding: 2em;
   display: flex;
@@ -163,7 +186,7 @@ header ul a.active::after {
     padding: 0;
   }
   .hero .content {
-    padding: 6em 8em 6em 8em;
+    padding: 6em 8em 2em 8em;
   }
   .hero .content h1 {
     font-size: 4.64rem;
