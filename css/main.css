@@ -62,9 +62,9 @@ footer ul a {
   font-size: 15px;
 }
 footer ul img {
-  padding: 0 0 0 3em;
   width: 20px;
   height: 20px;
+  vertical-align: bottom;
   margin-bottom: 4px;
 }
 
@@ -256,6 +256,7 @@ footer ul img {
   footer {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
   }
   footer .logo {
     order: 1;
@@ -267,10 +268,12 @@ footer ul img {
     padding-left: 0;
   }
   footer ul a {
-    padding: 0 3em 0em 0em;
+    padding: 0 2em 0em 0em;
   }
-  footer ul img {
-    margin-left: 122px;
+  footer img {
+    align-self: flex-end;
+    position: relative;
+    transform: translateX(1095%);
   }
   .image-container .rectangle {
     margin: 3em 0;
