@@ -234,6 +234,12 @@ footer ul img {
   header .logo {
     font-size: 19px;
   }
+  footer .logo {
+    display: none;
+  }
+  footer {
+    padding-left: 6em;
+  }
   .hero {
     padding: 2em 1em 1em 1em;
   }
@@ -252,28 +258,6 @@ footer ul img {
     margin-right: -1em;
     width: 100%;
     transform: translateY(-10%);
-  }
-  footer {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  footer .logo {
-    order: 1;
-    margin-top: 1.5rem;
-  }
-  footer ul {
-    order: 2;
-    align-self: flex-start;
-    padding-left: 0;
-  }
-  footer ul a {
-    padding: 0 2em 0em 0em;
-  }
-  footer img {
-    align-self: flex-end;
-    position: relative;
-    transform: translateX(1095%);
   }
   .image-container .rectangle {
     margin: 3em 0;
