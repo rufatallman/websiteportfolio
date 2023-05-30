@@ -226,4 +226,59 @@ footer ul img {
   .image-container .see-project-button {
     margin-top: 0.1rem;
   }
+}
+@media only screen and (max-width: 414px) {
+  header ul {
+    font-size: 16px;
+  }
+  header .logo {
+    font-size: 19px;
+  }
+  .hero {
+    padding: 2em 1em 1em 1em;
+  }
+  header {
+    padding: 2em 1em;
+  }
+  .image-container .mockup-image {
+    width: 325px;
+    top: 17em; /* Adjust the top position to move the image vertically */
+    left: 332px;
+    transform: translate(-115%, -70%);
+    -o-object-fit: contain;
+       object-fit: contain; /* Maintain aspect ratio without squishing */
+  }
+  .image-container .text-container {
+    margin-right: -1em;
+    width: 100%;
+    transform: translateY(-10%);
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .logo {
+    order: 1;
+    margin-top: 1.5rem;
+  }
+  footer ul {
+    order: 2;
+    align-self: flex-start;
+    padding-left: 0;
+  }
+  footer ul a {
+    padding: 0 3em 0em 0em;
+  }
+  footer ul img {
+    margin-left: 122px;
+  }
+  .image-container .rectangle {
+    margin: 3em 0;
+  }
+  .image-container img {
+    transform: translate(400%, -400%);
+  }
+  .image-container .rectangle {
+    height: 555px;
+  }
 }/*# sourceMappingURL=main.css.map */
