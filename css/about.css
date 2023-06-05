@@ -62,7 +62,7 @@ header ul a.active::after {
 }
 .hero .content {
   display: flex;
-  padding-bottom: 8em;
+  padding-bottom: 34em;
 }
 .hero .content .mobile {
   display: none;
@@ -110,7 +110,10 @@ header ul a.active::after {
 
 @media only screen and (max-width: 1145px) {
   .hero {
-    padding: 5em 2em 0em 2em;
+    padding: 5em 2em 2em 2em;
+  }
+  .hero .content {
+    padding-bottom: 39em;
   }
   .hero .content .right {
     margin-right: 0em;
