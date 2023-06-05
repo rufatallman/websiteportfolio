@@ -40,13 +40,15 @@ header ul a.active {
     position: absolute;
     bottom: -3px;
     left: 50%;
-    width: 50px; /* Set a fixed width for the underline */
+    width: 55px; /* Set a fixed width for the underline */
     height: 1px;
     background-color: #000000;
-    transform: translateX(-76%); /* Center the underline */
+    transform: translateX(99%); /* Center the underline */
 }
+
     .hero {
-        padding: 5em 10em 0em 10em; 
+        padding: 5em 10em 2em 10em; 
+        display: grid;
         
         img {
             height: 398px;
@@ -56,6 +58,11 @@ header ul a.active {
         
     .content {
         display: flex;
+        padding-bottom: 8em;
+
+       .mobile {
+        display: none;
+       }
 
         .right {
             margin-right: 2em;
@@ -76,3 +83,139 @@ header ul a.active {
         }
     }
 }
+
+.hero footer {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+      color: rgb(128, 128, 128);
+      font-size: 15px;
+  }
+
+  ul {
+      display: flex;
+      align-items: flex-end;
+
+      a {
+          padding: 0 0 0 3em;
+          font-size: 15px;
+      }
+
+      img {
+          width: 20px;
+          height: 20px;
+          vertical-align: bottom;
+          margin-bottom: 4px;
+          margin-right: 0em;
+          padding-right: 3em;
+      }
+   }
+}
+
+@media only screen and (max-width: 1145px) {
+  .hero {
+    padding: 5em 2em 0em 2em; 
+  }
+
+  .hero .content .right {
+    margin-right: 0em;
+  }
+
+  .hero .content .right p {
+    font-size: 17px;
+  }
+
+  .hero .content .right h2 {
+    font-size: 27px;
+  }
+
+  .hero .content .left img {
+    height: 265px;
+    width: 265px;
+  }
+
+  .hero footer ul img {
+    padding-right: 2em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .content {
+    flex-direction: column;
+  }
+
+  .hero .content .right h2 {
+    display: none;
+  }
+
+  .hero .content .right p {
+    line-height: 31px;
+    margin-bottom: 16px;
+    margin-top: 0px;
+  }
+
+  .hero .content .mobile {
+    display: contents;
+    display: block;
+    font-size: 27px;
+    font-weight: 500;
+  }
+
+  .hero .content .left img {
+    margin-right: 0em;
+    margin-bottom: 2.5em;
+  }
+
+  .hero {
+    padding-top: 0px;
+  }
+
+  .hero .content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero .content .left img {
+    height: 374px;
+    width: 374px;
+  }
+  .hero footer ul img {
+    padding-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+    header ul {
+    font-size: 16px;
+  }
+
+    header .logo {
+    font-size: 19px;
+  }
+
+    header ul a.active::after {
+    transform: translateX(82%); /* Center the underline */
+  }
+
+  .hero footer .logo{
+    display: none;
+  }
+
+  .hero footer {
+    padding-left: 6em;
+  }
+  .hero {
+    padding: 0em 0em 2em 0em; 
+  }
+  .hero .content {
+    padding: 0em 2em 2em 2em;
+  }
+  .hero .content .left img {
+    height: 325px;
+    width: 325px;
+  }
+}
+
+
