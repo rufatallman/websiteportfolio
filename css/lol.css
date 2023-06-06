@@ -70,34 +70,6 @@ header ul a {
   text-align: center;
 }
 
-@media only screen and (max-width: 414px) {
-  .content-wrapper {
-    padding: 0em 1em 1em 1em;
-  }
-  .content-wrapper .mock {
-    width: 364px;
-    padding-right: 2em;
-  }
-  .content-wrapper h2 {
-    font-size: 33px;
-  }
-  .content-wrapper p {
-    font-size: 18px;
-    line-height: 32px;
-  }
-  .background-section {
-    height: 55.4vh;
-  }
-  header {
-    padding-bottom: 1em;
-  }
-  header .logo {
-    font-size: 19px;
-  }
-  header ul {
-    font-size: 16px;
-  }
-}
 @media only screen and (max-width: 1000px) {
   .content-wrapper {
     padding: 2em 2em 0em 0em;
@@ -150,5 +122,33 @@ header ul a {
 @media only screen and (max-width: 582px) {
   .background-section {
     height: 70.3vh;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .content-wrapper {
+    padding: 2em 1em 1em 0em;
+  }
+  .content-wrapper .mock {
+    width: 364px;
+    padding-right: 1em;
+  }
+  .content-wrapper h2 {
+    font-size: 33px;
+  }
+  .content-wrapper p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .background-section {
+    height: 58.56vh;
+  }
+  header {
+    padding-bottom: 1em;
+  }
+  header .logo {
+    font-size: 19px;
+  }
+  header ul {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=lol.css.map */
