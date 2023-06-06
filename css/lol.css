@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", arial;
+  overflow-x: hidden;
+}
+body a {
+  color: black;
+  text-decoration: none;
+}
+body ul {
+  list-style-type: none;
+  margin: 0;
+  font-size: 1.14rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  position: relative;
+  z-index: 1;
+}
+header .logo {
+  color: black;
+  font-size: 1.3rem;
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  padding: 0 1em;
+}
+
+.background-section {
+  background-color: #12a6ea;
+  opacity: 30%;
+  width: 100%;
+  height: 654px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content-wrapper {
+  display: grid;
+  place-items: center;
+  height: 54vh;
+  padding-top: 2em;
+}
+.content-wrapper .logo {
+  width: 35px;
+}
+.content-wrapper .mock {
+  width: 700px;
+  margin: 2em 2em 0 2em;
+  -webkit-clip-path: inset(0 0 4em 0);
+          clip-path: inset(0 0 4em 0);
+}
+.content-wrapper h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0.7em 0 0 0;
+}
+.content-wrapper p {
+  font-size: 19px;
+  font-weight: 300;
+  margin: 0.7em 0 0 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 414px) {
+  .content-wrapper {
+    padding: 0em 1em 1em 1em;
+  }
+  .content-wrapper .mock {
+    width: 364px;
+    padding-right: 2em;
+  }
+  .content-wrapper h2 {
+    font-size: 33px;
+  }
+  .content-wrapper p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .background-section {
+    height: 55.4vh;
+  }
+  header {
+    padding-bottom: 1em;
+  }
+  header .logo {
+    font-size: 19px;
+  }
+  header ul {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .content-wrapper {
+    padding: 2em 2em 0em 0em;
+  }
+  .content-wrapper .mock {
+    width: 615px;
+  }
+  .content-wrapper h2 {
+    font-size: 35px;
+  }
+  .content-wrapper p {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 75%;
+  }
+  .background-section {
+    height: 77.3vh;
+  }
+  header {
+    padding-bottom: 1em;
+  }
+  header .logo {
+    font-size: 19px;
+  }
+  header ul {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .content-wrapper {
+    padding: 3em 2em 0em 0em;
+  }
+  .content-wrapper .mock {
+    width: 470px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .content-wrapper h2 {
+    font-size: 25px;
+  }
+  .content-wrapper p {
+    font-size: 17px;
+    line-height: 32px;
+    max-width: 75%;
+  }
+  .background-section {
+    height: 66.2vh;
+  }
+}
+@media only screen and (max-width: 582px) {
+  .background-section {
+    height: 70.3vh;
+  }
+}/*# sourceMappingURL=lol.css.map */
