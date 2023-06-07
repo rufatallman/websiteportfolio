@@ -37,7 +37,7 @@ header ul a {
   opacity: 30%;
   width: 100%;
   height: 654px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -46,8 +46,9 @@ header ul a {
 .content-wrapper {
   display: grid;
   place-items: center;
-  height: 54vh;
+  height: 500px;
   padding-top: 2em;
+  padding-bottom: 4em;
 }
 .content-wrapper .logo {
   width: 35px;
@@ -70,9 +71,26 @@ header ul a {
   text-align: center;
 }
 
+table {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+table p {
+  margin: 0em;
+  font-weight: 300;
+}
+table .tl {
+  padding-right: 4em;
+}
+table td {
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+
 @media only screen and (max-width: 1000px) {
   .content-wrapper {
-    padding: 2em 2em 0em 0em;
+    padding: 2em 2em 2em 0em;
   }
   .content-wrapper .mock {
     width: 615px;
@@ -97,6 +115,9 @@ header ul a {
   header ul {
     font-size: 16px;
   }
+  table {
+    font-size: 17px;
+  }
 }
 @media only screen and (max-width: 749px) {
   .content-wrapper {
@@ -116,12 +137,32 @@ header ul a {
     max-width: 75%;
   }
   .background-section {
-    height: 604.5px;
+    height: 556px;
+  }
+  table {
+    margin-top: -2em;
+  }
+  table td {
+    flex-basis: calc(50% - 10px); /* Adjust the width of each column */
+    padding-bottom: 5px;
+  }
+  table .tl {
+    padding-bottom: 1.5em;
+  }
+  table .ux {
+    padding-bottom: 1.5em;
+  }
+  table .yr {
+    padding-bottom: 1.5em;
+  }
+  tr {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 582px) {
   .background-section {
-    height: 608.5px;
+    height: 560px;
   }
 }
 @media only screen and (max-width: 414px) {
@@ -140,7 +181,7 @@ header ul a {
     line-height: 32px;
   }
   .background-section {
-    height: 497.1px;
+    height: 539px;
   }
   header {
     padding-bottom: 1em;

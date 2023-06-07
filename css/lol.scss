@@ -43,7 +43,7 @@ header {
     opacity: 30%;
     width: 100%;
     height: 654px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -52,8 +52,9 @@ header {
 .content-wrapper {
     display: grid;
     place-items: center;
-    height: 54vh;
+    height: 500px;
     padding-top: 2em;
+    padding-bottom: 4em;
     
     .logo {
         width: 35px;
@@ -79,9 +80,29 @@ header {
     }
 }
 
+table {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+
+    p {
+        margin: 0em;
+        font-weight: 300;
+    }
+
+    .tl {
+        padding-right: 4em;
+    }
+
+    td {
+        padding-left: 2em;
+        padding-bottom: 1em;
+    }
+}
+
   @media only screen and (max-width: 1000px) {
     .content-wrapper {
-        padding: 2em 2em 0em 0em;
+        padding: 2em 2em 2em 0em;
 
         .mock {
             width: 615px;
@@ -113,7 +134,11 @@ header {
             font-size: 16px;
         }
     }
-  }
+
+    table {
+        font-size: 17px;
+    }
+}
   
   @media only screen and (max-width: 749px) {
     .content-wrapper {
@@ -136,13 +161,37 @@ header {
         }
     }
     .background-section {
-        height: 604.5px;
+        height: 556px;
     }
+
+    table {
+        margin-top: -2em;
+
+        td {
+            flex-basis: calc(50% - 10px); /* Adjust the width of each column */
+            padding-bottom: 5px;
+          }
+        
+        .tl {
+            padding-bottom: 1.5em;
+        }
+        .ux {
+            padding-bottom: 1.5em;
+        }
+        .yr {
+            padding-bottom: 1.5em;
+        }
+    }
+    
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }   
   }
 
   @media only screen and (max-width: 582px) {
     .background-section {
-        height: 608.5px;
+        height: 560px;
     }
   }
 
@@ -166,7 +215,7 @@ header {
     }
 
     .background-section {
-        height: 497.1px;
+        height: 539px;
     }
 
     header {
