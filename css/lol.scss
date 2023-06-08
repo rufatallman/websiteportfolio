@@ -100,6 +100,33 @@ table {
     }
 }
 
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 53em;
+}
+
+.page {
+    p {
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 34px;
+        padding-bottom: 0.8em;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 36px;
+        margin-bottom: 0em;
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 0em;
+    }
+}
+
   @media only screen and (max-width: 1000px) {
     .content-wrapper {
         padding: 2em 2em 2em 0em;
@@ -137,6 +164,24 @@ table {
 
     table {
         font-size: 17px;
+    }
+
+    .page {
+        width: 45em;
+        p {
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 34px;
+        }
+    
+        h3 {
+            font-weight: 500;
+            font-size: 27px;
+            margin-bottom: 0em;
+        }
+        h4 {
+            font-size: 20px;
+        }
     }
 }
   
@@ -186,12 +231,20 @@ table {
       tr {
         display: flex;
         flex-wrap: wrap;
-      }   
+      }
+      
+      .page {
+        width: 36em;
+      }
   }
 
   @media only screen and (max-width: 582px) {
     .background-section {
         height: 560px;
+    }
+
+    .page {
+        width: 32em;
     }
   }
 
@@ -228,5 +281,15 @@ table {
         ul {
             font-size: 16px;
         }
+    }
+
+    table {
+        td {
+            padding-left: 1em;
+        }
+    }
+
+    .page {
+        width: 24em;
     }
 }
