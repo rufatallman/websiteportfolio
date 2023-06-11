@@ -370,7 +370,7 @@ table {
     footer {
         display: flex;
         justify-content: space-between;
-        padding: 2em 0em 2em 11em;
+        padding: 2em 1.5em 2em 1.5em;
       
         .logo {
             display: none;
@@ -379,9 +379,10 @@ table {
         ul {
             display: flex;
             align-items: flex-end;
+            padding-left: 0em;
       
             a {
-                padding: 0em 2em 0 0em;
+                padding: 0em 3em 0 0em;
                 font-size: 15px;
             }
       
@@ -392,6 +393,7 @@ table {
                 margin-bottom: 4px;
                 margin-right: 0em;
                 padding-right: 0em;
+                padding-left: 10.2em;
             }
          }
       }

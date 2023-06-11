@@ -307,7 +307,7 @@ table td {
   footer {
     display: flex;
     justify-content: space-between;
-    padding: 2em 0em 2em 11em;
+    padding: 2em 1.5em 2em 1.5em;
   }
   footer .logo {
     display: none;
@@ -315,9 +315,10 @@ table td {
   footer ul {
     display: flex;
     align-items: flex-end;
+    padding-left: 0em;
   }
   footer ul a {
-    padding: 0em 2em 0 0em;
+    padding: 0em 3em 0 0em;
     font-size: 15px;
   }
   footer ul img {
@@ -327,5 +328,6 @@ table td {
     margin-bottom: 4px;
     margin-right: 0em;
     padding-right: 0em;
+    padding-left: 10.2em;
   }
 }/*# sourceMappingURL=lol.css.map */
